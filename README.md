@@ -61,6 +61,17 @@ src/app/
 ```
 
 
-## Git 集成连通性测试
+## Deployment
 
-2026-09-22：推一个提交，观察 Cloudflare 是否自动重建。
+Push to `main` and Cloudflare Workers Builds rebuilds and redeploys automatically.
+Verified 2026-09-22: a push produced a new deployment 75 seconds later.
+
+```bash
+git add -A && git commit -m "..." && git push
+```
+
+Manual deploy still works but is temporary, since the next push rebuilds from git.
+
+```bash
+pnpm build && npx wrangler deploy
+```
