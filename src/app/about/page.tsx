@@ -89,6 +89,24 @@ export default function AboutPage() {
         </p>
       </section>
 
+      <section className="pb-12">
+        <h2 className="text-sm font-medium">Analytics and cookies</h2>
+        <p className="mt-3 max-w-[62ch] text-sm text-muted-foreground">
+          This site uses Google Analytics to see which pages get read and which ones do not.
+          It sets cookies, so it does not load until you accept the banner. Decline and no
+          Google script runs, no cookie is set, and no request leaves your browser.
+        </p>
+        <p className="mt-3 max-w-[62ch] text-sm text-muted-foreground">
+          Your choice is stored in your own browser under the key <code className="font-mono text-xs">ad-consent</code>.
+          Clear it and the banner returns. There is no account, no newsletter and no other
+          tracker on the site.
+        </p>
+        <p className="mt-3 max-w-[62ch] text-sm text-muted-foreground">
+          The site is served by Cloudflare, which keeps standard request logs. Those are
+          outside our control and covered by Cloudflare&apos;s own policy.
+        </p>
+      </section>
+
       <section className="border-t rule py-10">
         <h2 className="text-sm font-medium">Independence</h2>
         <p className="mt-3 max-w-[62ch] text-sm text-muted-foreground">

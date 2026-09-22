@@ -6,6 +6,7 @@ import { SiteNav } from "@/components/site-nav";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { WebsiteJsonLd } from "@/components/json-ld";
 import { SITE_URL } from "@/lib/site";
+import { AnalyticsConsent } from "@/components/analytics-consent";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -55,6 +56,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <SiteNav />
         <main className="flex-1">{children}</main>
         <SiteFooter />
+        <AnalyticsConsent />
       </body>
     </html>
   );
