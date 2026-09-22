@@ -13,24 +13,25 @@
 | Worker | ✅ 已部署（手动 `wrangler deploy`） |
 | 域名 | ✅ `animedice.xyz` 已绑到 Worker（含 www） |
 | 构建产物 | ✅ canonical / sitemap / robots 全部指向 `https://animedice.xyz` |
-| DNS | ⏳ **等待 Spaceship 处改 NS** |
+| DNS | ✅ zone 已激活（2026-09-22T08:35:56） |
+| IndexNow | ✅ 已推 37 个 URL（HTTP 202） |
 | **CF Git 集成** | ❌ **未连接，需要 dashboard 操作** |
 
-### 域名已就绪，等 NS 生效
-
-Cloudflare 要求把 `animedice.xyz` 的 nameserver 改成：
+### 域名已生效
 
 ```
-ariella.ns.cloudflare.com
-seamus.ns.cloudflare.com
+注册局 NS   ariella.ns.cloudflare.com / seamus.ns.cloudflare.com
+A 记录      172.67.168.33 / 104.21.46.62
+HTTP       200（server: cloudflare, cf-ray: *-SIN）
 ```
 
-当前注册商（Spaceship）仍是 `launch1.spaceship.net` / `launch2.spaceship.net`。
+**踩过的坑（备查）**：NS 改完后 CF zone 仍是 `pending`，因为 CF 只在
+zone 创建后 38 秒检查过一次 NS，看到的是旧值就不再重试。
+`activation_failure_reason` 字段会显示 `ns_delegated_from_provider`。
+需要去 dashboard 点「立即检查名称服务器」，或者等 CF 自动重试。
 
-改完后 zone 状态从 `pending` 变 `active`，证书自动签发，站点即可访问。
-
-**绑定已通过 API 完成**（`PUT /accounts/{id}/workers/domains`），
-不需要再去 dashboard 点 Domains & Routes。
+**绑定通过 API 完成**（`PUT /accounts/{id}/workers/domains`），
+wrangler 没有 `domains` 子命令。
 
 ---
 
