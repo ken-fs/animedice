@@ -5,6 +5,7 @@ import "./globals.css";
 import { SiteNav } from "@/components/site-nav";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { WebsiteJsonLd } from "@/components/json-ld";
+import { SITE_URL } from "@/lib/site";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,10 +19,9 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://animedice.wiki";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(SITE),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Anime Dice codes, unit odds and grade odds",
     template: "%s | Anime Dice Reference",
@@ -51,7 +51,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         />
       </head>
       <body className="flex min-h-full flex-col antialiased">
-        <WebsiteJsonLd site={SITE} name="Anime Dice Reference" />
+        <WebsiteJsonLd site={SITE_URL} name="Anime Dice Reference" />
         <SiteNav />
         <main className="flex-1">{children}</main>
         <SiteFooter />

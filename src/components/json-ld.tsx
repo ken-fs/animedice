@@ -1,3 +1,4 @@
+import { SITE_URL } from "@/lib/site";
 /**
  * Structured data.
  *
@@ -10,7 +11,7 @@ export function WebsiteJsonLd({ site, name }: { site: string; name: string }) {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name,
-    url: site,
+    url: SITE_URL,
     description:
       "An independent Anime Dice reference: unit roll odds, grade chances, codes and the dice ladder.",
   };
@@ -42,7 +43,6 @@ export function FaqJsonLd({ items }: { items: { q: string; a: string }[] }) {
 
 /** Ordered roster, so search engines see the same ordering the page shows. */
 export function UnitListJsonLd({ units }: { units: { name: string; slug: string }[] }) {
-  const site = process.env.NEXT_PUBLIC_SITE_URL ?? "https://animedice.wiki";
   const data = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -52,7 +52,7 @@ export function UnitListJsonLd({ units }: { units: { name: string; slug: string 
       "@type": "ListItem",
       position: i + 1,
       name: u.name,
-      url: `${site}/units/${u.slug}/`,
+      url: `${SITE_URL}/units/${u.slug}/`,
     })),
   };
   return (

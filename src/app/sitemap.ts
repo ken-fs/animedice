@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { units, codes } from "@/data/game";
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://animedice.wiki";
+import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -20,13 +20,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     ...staticRoutes.map((r) => ({
-      url: SITE + r.path,
+      url: SITE_URL + r.path,
       lastModified: now,
       changeFrequency: r.freq,
       priority: r.priority,
     })),
     ...units.map((u) => ({
-      url: `${SITE}/units/${u.slug}/`,
+      url: `${SITE_URL}/units/${u.slug}/`,
       lastModified: now,
       changeFrequency: "weekly" as const,
       priority: 0.6,
