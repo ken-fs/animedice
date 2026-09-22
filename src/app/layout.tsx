@@ -44,10 +44,18 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       suppressHydrationWarning
     >
       <head>
-        {/* Sets the theme before paint so a light page never flashes dark. */}
+        {/*
+          Theme defaults to light rather than following the OS. This is a data
+          reference: tables, charts and odds numbers are read in daylight and
+          printed, and the light ground is the one the palette was designed
+          around. Dark stays available from the footer toggle, and a stored
+          choice always wins.
+
+          Runs before paint so a stored dark preference never flashes light.
+        */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem("ad-theme");var d=t?t==="dark":window.matchMedia("(prefers-color-scheme: dark)").matches;document.documentElement.classList.toggle("dark",d)}catch(e){}})()`,
+            __html: `(function(){try{var t=localStorage.getItem("ad-theme");document.documentElement.classList.toggle("dark",t==="dark")}catch(e){}})()`,
           }}
         />
       </head>

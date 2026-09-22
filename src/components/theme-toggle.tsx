@@ -12,6 +12,8 @@ export function ThemeToggle() {
 
   useEffect(() => {
     setMounted(true);
+    // Reads the class the head script already applied, so the button never
+    // disagrees with the painted page.
     setDark(document.documentElement.classList.contains("dark"));
   }, []);
 
