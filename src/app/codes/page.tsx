@@ -36,13 +36,17 @@ export default function CodesPage() {
           {codes.map((c) => (
             <li
               key={c.code}
-              className="flex flex-wrap items-center gap-x-4 gap-y-2 px-4 py-3"
+              className="grid gap-x-5 gap-y-2 px-4 py-3 sm:grid-cols-[15rem_1fr] sm:items-center"
             >
-              <code className="font-mono text-sm font-semibold tracking-tight">
-                {c.code}
-              </code>
-              <CopyCode code={c.code} />
-              <span className="ml-auto text-sm text-muted-foreground">{c.reward}</span>
+              <div className="flex items-center gap-3">
+                <code className="font-mono text-sm font-semibold tracking-tight">
+                  {c.code}
+                </code>
+                <CopyCode code={c.code} />
+              </div>
+              {/* Reward sits in a fixed second column rather than being pushed
+                  to the far edge, so the eye does not cross half the page. */}
+              <span className="text-sm text-muted-foreground">{c.reward}</span>
             </li>
           ))}
         </ul>
