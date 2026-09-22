@@ -11,9 +11,26 @@
 |---|---|
 | 代码 | ✅ 已推到 `main` |
 | Worker | ✅ 已部署（手动 `wrangler deploy`） |
-| 临时地址 | https://animedice.493129720ljw.workers.dev |
+| 域名 | ✅ `animedice.xyz` 已绑到 Worker（含 www） |
+| 构建产物 | ✅ canonical / sitemap / robots 全部指向 `https://animedice.xyz` |
+| DNS | ⏳ **等待 Spaceship 处改 NS** |
 | **CF Git 集成** | ❌ **未连接，需要 dashboard 操作** |
-| **域名** | ❌ **未定，`robots.txt` 目前指向占位域名** |
+
+### 域名已就绪，等 NS 生效
+
+Cloudflare 要求把 `animedice.xyz` 的 nameserver 改成：
+
+```
+ariella.ns.cloudflare.com
+seamus.ns.cloudflare.com
+```
+
+当前注册商（Spaceship）仍是 `launch1.spaceship.net` / `launch2.spaceship.net`。
+
+改完后 zone 状态从 `pending` 变 `active`，证书自动签发，站点即可访问。
+
+**绑定已通过 API 完成**（`PUT /accounts/{id}/workers/domains`），
+不需要再去 dashboard 点 Domains & Routes。
 
 ---
 
