@@ -1,0 +1,691 @@
+{
+  "_note": "数据来源见 anime-dice-research/README.md。verified=false 表示该单位在公开来源中无记录，页面须标注而非编造。",
+  "game": {
+    "name": "Anime Dice",
+    "developer": "More & More Games",
+    "placeId": 113290951185459,
+    "universeId": 10708913337,
+    "created": "2026-08-15",
+    "updated": "2026-09-21",
+    "maxPlayers": 9,
+    "discord": "https://discord.com/invite/robloxanimedice",
+    "robloxUrl": "https://www.roblox.com/games/113290951185459/Anime-Dice"
+  },
+  "units": [
+    {
+      "name": "Enol",
+      "slug": "enol",
+      "tier": "S+",
+      "odds": 290000,
+      "oddsText": "1 in 290K",
+      "income": 9100,
+      "incomeText": "$9.1K/s",
+      "chance": 3.4482758620689654e-06,
+      "verified": true
+    },
+    {
+      "name": "Sakuna",
+      "slug": "sakuna",
+      "tier": "S",
+      "odds": 38000,
+      "oddsText": "1 in 38K",
+      "income": 2000,
+      "incomeText": "$2K/s",
+      "chance": 2.6315789473684212e-05,
+      "verified": true
+    },
+    {
+      "name": "Madera",
+      "slug": "madera",
+      "tier": "S",
+      "odds": 25000,
+      "oddsText": "1 in 25K",
+      "income": 1500,
+      "incomeText": "$1.5K/s",
+      "chance": 4e-05,
+      "verified": true
+    },
+    {
+      "name": "Maheto",
+      "slug": "maheto",
+      "tier": "S",
+      "odds": 16000,
+      "oddsText": "1 in 16K",
+      "income": 1100,
+      "incomeText": "$1.1K/s",
+      "chance": 6.25e-05,
+      "verified": true
+    },
+    {
+      "name": "Todoh",
+      "slug": "todoh",
+      "tier": "A",
+      "odds": 11000,
+      "oddsText": "1 in 11K",
+      "income": 851,
+      "incomeText": "$851/s",
+      "chance": 9.09090909090909e-05,
+      "verified": true
+    },
+    {
+      "name": "Super Saiyen",
+      "slug": "super-saiyen",
+      "tier": "A",
+      "odds": 5000,
+      "oddsText": "1 in 5K",
+      "income": 480,
+      "incomeText": "$480/s",
+      "chance": 0.0002,
+      "verified": true
+    },
+    {
+      "name": "Goko",
+      "slug": "goko",
+      "tier": "A",
+      "odds": 3500,
+      "oddsText": "1 in 3.5K",
+      "income": 371,
+      "incomeText": "$371/s",
+      "chance": 0.00028571428571428574,
+      "verified": true
+    },
+    {
+      "name": "Zaro",
+      "slug": "zaro",
+      "tier": "B",
+      "odds": 1700,
+      "oddsText": "1 in 1.7K",
+      "income": 219,
+      "incomeText": "$219/s",
+      "chance": 0.000588235294117647,
+      "verified": true
+    },
+    {
+      "name": "Hasoka",
+      "slug": "hasoka",
+      "tier": "B",
+      "odds": 1200,
+      "oddsText": "1 in 1.2K",
+      "income": 170,
+      "incomeText": "$170/s",
+      "chance": 0.0008333333333333334,
+      "verified": true
+    },
+    {
+      "name": "Deko",
+      "slug": "deko",
+      "tier": "B",
+      "odds": 850,
+      "oddsText": "1 in 850",
+      "income": 132,
+      "incomeText": "$132/s",
+      "chance": 0.001176470588235294,
+      "verified": true
+    },
+    {
+      "name": "Bakuga",
+      "slug": "bakuga",
+      "tier": "B",
+      "odds": 450,
+      "oddsText": "1 in 450",
+      "income": 83,
+      "incomeText": "$83/s",
+      "chance": 0.0022222222222222222,
+      "verified": true
+    },
+    {
+      "name": "Todoraki",
+      "slug": "todoraki",
+      "tier": "B",
+      "odds": 325,
+      "oddsText": "1 in 325",
+      "income": 66,
+      "incomeText": "$66/s",
+      "chance": 0.003076923076923077,
+      "verified": true
+    },
+    {
+      "name": "Tanjuro",
+      "slug": "tanjuro",
+      "tier": "C",
+      "odds": 240,
+      "oddsText": "1 in 240",
+      "income": 53,
+      "incomeText": "$53/s",
+      "chance": 0.004166666666666667,
+      "verified": true
+    },
+    {
+      "name": "Perfect Zell",
+      "slug": "perfect-zell",
+      "tier": "C",
+      "odds": 140,
+      "oddsText": "1 in 140",
+      "income": 34,
+      "incomeText": "$34/s",
+      "chance": 0.007142857142857143,
+      "verified": true
+    },
+    {
+      "name": "Kakeshi",
+      "slug": "kakeshi",
+      "tier": "C",
+      "odds": 95,
+      "oddsText": "1 in 95",
+      "income": 27,
+      "incomeText": "$27/s",
+      "chance": 0.010526315789473684,
+      "verified": true
+    },
+    {
+      "name": "Friza",
+      "slug": "friza",
+      "tier": "C",
+      "odds": 52,
+      "oddsText": "1 in 52",
+      "income": 17,
+      "incomeText": "$17/s",
+      "chance": 0.019230769230769232,
+      "verified": true
+    },
+    {
+      "name": "Nezuka",
+      "slug": "nezuka",
+      "tier": "C",
+      "odds": 28,
+      "oddsText": "1 in 28",
+      "income": 11,
+      "incomeText": "$11/s",
+      "chance": 0.03571428571428571,
+      "verified": true
+    },
+    {
+      "name": "Tien",
+      "slug": "tien",
+      "tier": "D",
+      "odds": 20,
+      "oddsText": "1 in 20",
+      "income": 8,
+      "incomeText": "$8/s",
+      "chance": 0.05,
+      "verified": true
+    },
+    {
+      "name": "Inasuke",
+      "slug": "inasuke",
+      "tier": "D",
+      "odds": 15,
+      "oddsText": "1 in 15",
+      "income": 7,
+      "incomeText": "$7/s",
+      "chance": 0.06666666666666667,
+      "verified": true
+    },
+    {
+      "name": "Krillan",
+      "slug": "krillan",
+      "tier": "D",
+      "odds": 11,
+      "oddsText": "1 in 11",
+      "income": 5,
+      "incomeText": "$5/s",
+      "chance": 0.09090909090909091,
+      "verified": true
+    },
+    {
+      "name": "Aizan",
+      "slug": "aizan",
+      "tier": "D",
+      "odds": 6,
+      "oddsText": "1 in 6",
+      "income": 3,
+      "incomeText": "$3/s",
+      "chance": 0.16666666666666666,
+      "verified": true
+    },
+    {
+      "name": "Ginyou",
+      "slug": "ginyou",
+      "tier": "D",
+      "odds": 4,
+      "oddsText": "1 in 4",
+      "income": 2,
+      "incomeText": "$2/s",
+      "chance": 0.25,
+      "verified": true
+    },
+    {
+      "name": "Ichiga",
+      "slug": "ichiga",
+      "tier": "D",
+      "odds": 3,
+      "oddsText": "1 in 3",
+      "income": 2,
+      "incomeText": "$2/s",
+      "chance": 0.3333333333333333,
+      "verified": true
+    },
+    {
+      "name": "Naroto",
+      "slug": "naroto",
+      "tier": "D",
+      "odds": 2,
+      "oddsText": "1 in 2",
+      "income": 1,
+      "incomeText": "$1/s",
+      "chance": 0.5,
+      "verified": true
+    },
+    {
+      "name": "Gujo",
+      "slug": "gujo",
+      "tier": "Unranked",
+      "odds": null,
+      "oddsText": "Not recorded",
+      "income": null,
+      "incomeText": "Not recorded",
+      "chance": null,
+      "verified": false
+    },
+    {
+      "name": "Levy",
+      "slug": "levy",
+      "tier": "Unranked",
+      "odds": null,
+      "oddsText": "Not recorded",
+      "income": null,
+      "incomeText": "Not recorded",
+      "chance": null,
+      "verified": false
+    },
+    {
+      "name": "Pikolo",
+      "slug": "pikolo",
+      "tier": "Unranked",
+      "odds": null,
+      "oddsText": "Not recorded",
+      "income": null,
+      "incomeText": "Not recorded",
+      "chance": null,
+      "verified": false
+    },
+    {
+      "name": "Zenitsa",
+      "slug": "zenitsa",
+      "tier": "Unranked",
+      "odds": null,
+      "oddsText": "Not recorded",
+      "income": null,
+      "incomeText": "Not recorded",
+      "chance": null,
+      "verified": false
+    }
+  ],
+  "grades": [
+    {
+      "name": "Z+",
+      "income": 25,
+      "chance": 0.007,
+      "status": "verified"
+    },
+    {
+      "name": "Z",
+      "income": 15,
+      "chance": 0.007,
+      "status": "verified"
+    },
+    {
+      "name": "S+",
+      "income": 10,
+      "chance": 0.01,
+      "status": "verified"
+    },
+    {
+      "name": "S",
+      "income": 7,
+      "chance": 0.089,
+      "status": "verified"
+    },
+    {
+      "name": "A+",
+      "income": 4.5,
+      "chance": 2.9,
+      "status": "verified"
+    },
+    {
+      "name": "A",
+      "income": 3,
+      "chance": 7.9,
+      "status": "verified"
+    },
+    {
+      "name": "B",
+      "income": 1.6,
+      "chance": 14.9,
+      "status": "verified"
+    },
+    {
+      "name": "C",
+      "income": 1.2,
+      "chance": 27.9,
+      "status": "verified"
+    },
+    {
+      "name": "D",
+      "income": 1.1,
+      "chance": 44.9,
+      "status": "verified"
+    }
+  ],
+  "traits": [
+    {
+      "name": "Transcendent",
+      "income": 15,
+      "damage": 15,
+      "health": 15,
+      "tier": "S",
+      "chance": null,
+      "status": "verified-effect-chance-missing"
+    },
+    {
+      "name": "Monarch",
+      "income": 8,
+      "damage": 8,
+      "health": 8,
+      "tier": "S",
+      "chance": null,
+      "status": "verified-effect-chance-missing"
+    },
+    {
+      "name": "Shogun",
+      "income": 5,
+      "damage": 5,
+      "health": 5,
+      "tier": "S",
+      "chance": null,
+      "status": "verified-effect-chance-missing"
+    },
+    {
+      "name": "Samurai",
+      "income": 3,
+      "damage": 3,
+      "health": 3,
+      "tier": "S",
+      "chance": null,
+      "status": "verified-effect-chance-missing"
+    },
+    {
+      "name": "Health III",
+      "income": null,
+      "damage": null,
+      "health": 2,
+      "tier": "A",
+      "chance": null,
+      "status": "verified-effect-chance-missing"
+    },
+    {
+      "name": "Damage III",
+      "income": null,
+      "damage": 2,
+      "health": null,
+      "tier": "A",
+      "chance": null,
+      "status": "verified-effect-chance-missing"
+    },
+    {
+      "name": "Money III",
+      "income": 2,
+      "damage": null,
+      "health": null,
+      "tier": "A",
+      "chance": null,
+      "status": "verified-effect-chance-missing"
+    },
+    {
+      "name": "Health II",
+      "income": null,
+      "damage": null,
+      "health": 1.5,
+      "tier": "B",
+      "chance": null,
+      "status": "verified-effect-chance-missing"
+    },
+    {
+      "name": "Money II",
+      "income": 1.5,
+      "damage": null,
+      "health": null,
+      "tier": "B",
+      "chance": null,
+      "status": "verified-effect-chance-missing"
+    },
+    {
+      "name": "Damage II",
+      "income": null,
+      "damage": 1.5,
+      "health": null,
+      "tier": "B",
+      "chance": null,
+      "status": "verified-effect-chance-missing"
+    },
+    {
+      "name": "Health I",
+      "income": null,
+      "damage": null,
+      "health": 1.2,
+      "tier": "C",
+      "chance": null,
+      "status": "verified-effect-chance-missing"
+    },
+    {
+      "name": "Damage I",
+      "income": null,
+      "damage": 1.2,
+      "health": null,
+      "tier": "C",
+      "chance": null,
+      "status": "verified-effect-chance-missing"
+    },
+    {
+      "name": "Money I",
+      "income": 1.2,
+      "damage": null,
+      "health": null,
+      "tier": "C",
+      "chance": null,
+      "status": "verified-effect-chance-missing"
+    }
+  ],
+  "mutations": {
+    "names": [
+      "Silver",
+      "Gold",
+      "Emerald",
+      "Diamond",
+      "Ruby",
+      "Rainbow"
+    ],
+    "sizeModifiers": [
+      "huge",
+      "titanic"
+    ],
+    "multipliers": null,
+    "status": "names-verified-multipliers-missing",
+    "source": "deltiasgaming.com/roblox-anime-dice-a-beginners-guide (2026-09-18)",
+    "_note": "⚠️ 陷阱记录：搜索结果里 Demonic 10x / Dracula 8x / Nightmare 7x 那套数据来自 **Fish an Anime RNG**，不是本游戏。已用 yt-dlp 核实视频标题确认。不要混用。"
+  },
+  "dice": [
+    {
+      "name": "Lightning",
+      "rarity": "Rare",
+      "luck": 42,
+      "price": "$500K",
+      "sourcing": "single"
+    },
+    {
+      "name": "Ice",
+      "rarity": "Rare",
+      "luck": 100,
+      "price": "$4M",
+      "sourcing": "single"
+    },
+    {
+      "name": "Magma",
+      "rarity": "Epic",
+      "luck": 200,
+      "price": "$30M",
+      "sourcing": "single"
+    },
+    {
+      "name": "Storm",
+      "rarity": "Epic",
+      "luck": 400,
+      "price": "$200M",
+      "sourcing": "corroborated"
+    },
+    {
+      "name": "Shadow",
+      "rarity": "Epic",
+      "luck": 750,
+      "price": "$1.5B",
+      "sourcing": "corroborated"
+    },
+    {
+      "name": "Light",
+      "rarity": "Legendary",
+      "luck": 1500,
+      "price": "$12B",
+      "sourcing": "corroborated"
+    },
+    {
+      "name": "Blood Moon",
+      "rarity": "Legendary",
+      "luck": 3000,
+      "price": "$100B",
+      "sourcing": "single"
+    },
+    {
+      "name": "Void",
+      "rarity": "Legendary",
+      "luck": 5000,
+      "price": "$1.5T",
+      "sourcing": "single"
+    }
+  ],
+  "codes": [
+    {
+      "code": "UPDATE5",
+      "reward": "5 Lucky Spins, 10 Trait Rerolls, 10 Gems",
+      "sources": 2
+    },
+    {
+      "code": "UPDATE4",
+      "reward": "10 Trait Rerolls, 10 Tickets, 10 Gems",
+      "sources": 3
+    },
+    {
+      "code": "UPDATE3",
+      "reward": "3 Lucky Spins, 3 Trait Rerolls, 3 Gems",
+      "sources": 3
+    },
+    {
+      "code": "UPDATE2",
+      "reward": "3 Lucky Spins, 3 Trait Rerolls, 3 Gems",
+      "sources": 3
+    },
+    {
+      "code": "UPDATE1",
+      "reward": "2 Lucky Spins, 3 Trait Rerolls, 3 Gems",
+      "sources": 3
+    },
+    {
+      "code": "250KLIKES",
+      "reward": "5 Lucky Spins, 10 Trait Rerolls, 10 Gems",
+      "sources": 2
+    },
+    {
+      "code": "100KLIKES",
+      "reward": "3 Lucky Spins, 10 Trait Rerolls, 10 Gems",
+      "sources": 2
+    },
+    {
+      "code": "40KCCU",
+      "reward": "2 Lucky Spins, 10 Trait Rerolls, 10 Gems",
+      "sources": 2
+    },
+    {
+      "code": "30KCCU",
+      "reward": "2 Lucky Spins, 10 Trait Rerolls, 10 Gems",
+      "sources": 2
+    },
+    {
+      "code": "20KCCU",
+      "reward": "2 Lucky Spins, 10 Trait Rerolls, 10 Gems",
+      "sources": 3
+    },
+    {
+      "code": "10KCCU",
+      "reward": "2 Lucky Spins, 10 Trait Rerolls, 10 Gems",
+      "sources": 3
+    },
+    {
+      "code": "5KCCU",
+      "reward": "3 Lucky Spins, 3 Trait Rerolls, 3 Gems",
+      "sources": 3
+    },
+    {
+      "code": "1KCCU",
+      "reward": "3 Lucky Spins, 3 Trait Rerolls, 3 Gems",
+      "sources": 3
+    },
+    {
+      "code": "RELEASE",
+      "reward": "1 Lucky Spin, 2 Trait Rerolls, 2 Gems",
+      "sources": 3
+    }
+  ],
+  "redeemSteps": [
+    "在 Roblox 上启动 Anime Dice",
+    "点左侧的 Shop 按钮",
+    "滚到最底部的 code 输入框",
+    "粘贴码（区分大小写）",
+    "点 Redeem"
+  ],
+  "systems": {
+    "coreLoop": [
+      "Roll dice → get units",
+      "Place units on plot",
+      "Units generate cash",
+      "Buy better dice + upgrades",
+      "Increase luck",
+      "Improve units (grades/traits/mutations)",
+      "Rebirth"
+    ],
+    "luckSources": [
+      "Better dice",
+      "Skill tree upgrades",
+      "Luck potions"
+    ],
+    "rebirth": {
+      "effect": "重置 cash，但给永久 cash + luck 倍率 + 额外槽位",
+      "advice": "能在几分钟内重建经济才 rebirth"
+    },
+    "currency": {
+      "Cash": "主货币，买 dice / 升级",
+      "Gems": "Grade reroll 用（Daily Rewards + Towers）",
+      "Trait Rerolls": "Trait 重roll 用（codes + Tower + Daily Rewards）",
+      "Lucky Spins": "提升 roll 概率",
+      "Tickets": "来源不明（UPDATE4 码给 10 个）—— status: missing"
+    },
+    "status": "verified"
+  },
+  "gaps": [
+    "4 个单位的 income/odds（Gujo / Levy / Pikolo / Zenitsa）",
+    "13 个 traits 的全部 roll 概率",
+    "6 个 mutations 的全部倍率",
+    "size modifier（huge / titanic）的倍率",
+    "Grade 概率总和 98.6% ≠ 100%（差 1.39%）",
+    "Tickets 的用途",
+    "Chrono Dice 是否在本阶梯内"
+  ]
+}

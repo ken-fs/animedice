@@ -1,0 +1,141 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-geist-sans);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+
+  /* Rarity ladder: sequential ink ramp, not a rainbow.
+     Ordinal data (S+ > S > A > B > C > D) gets a sequential encoding.
+     Tier and rarity correlate, so one ramp carries both readings. */
+  --color-tier-splus: var(--tier-splus);
+  --color-tier-s: var(--tier-s);
+  --color-tier-a: var(--tier-a);
+  --color-tier-b: var(--tier-b);
+  --color-tier-c: var(--tier-c);
+  --color-tier-d: var(--tier-d);
+
+  /* Radius lock: 2 values only. Controls are pill, containers are 10px. */
+  --radius-control: 999px;
+  --radius-container: 10px;
+  --radius: 10px;
+}
+
+:root {
+  /* "Ledger" - warm paper, warm ink, single burnt-amber accent.
+     Deliberately NOT the dark-navy-plus-neon that every competitor ships. */
+  --background: oklch(0.9820 0.0041 91.45);
+  --foreground: oklch(0.2161 0.0061 56.04);
+  --card: oklch(0.9955 0.0022 91.45);
+  --card-foreground: oklch(0.2161 0.0061 56.04);
+  --popover: oklch(0.9955 0.0022 91.45);
+  --popover-foreground: oklch(0.2161 0.0061 56.04);
+  --primary: oklch(0.5553 0.1455 49.00);
+  --primary-foreground: oklch(1.0000 0.0000 89.88);
+  --secondary: oklch(0.9553 0.0070 88.64);
+  --secondary-foreground: oklch(0.2161 0.0061 56.04);
+  --muted: oklch(0.9553 0.0070 88.64);
+  --muted-foreground: oklch(0.5534 0.0116 58.07);
+  --accent: oklch(0.9553 0.0070 88.64);
+  --accent-foreground: oklch(0.2161 0.0061 56.04);
+  --destructive: oklch(0.5054 0.1905 27.52);
+  --border: oklch(0.9104 0.0129 86.83);
+  --input: oklch(0.9104 0.0129 86.83);
+  --ring: oklch(0.5553 0.1455 49.00);
+
+  --tier-splus: oklch(0.2800 0.0210 58.00);
+  --tier-s: oklch(0.3900 0.0180 58.00);
+  --tier-a: oklch(0.4900 0.0160 58.00);
+  --tier-b: oklch(0.5900 0.0140 58.00);
+  --tier-c: oklch(0.6900 0.0120 58.00);
+  --tier-d: oklch(0.7900 0.0100 58.00);
+}
+
+.dark {
+  --background: oklch(0.1959 0.0120 91.79);
+  --foreground: oklch(0.9613 0.0111 89.72);
+  --card: oklch(0.2274 0.0138 87.56);
+  --card-foreground: oklch(0.9613 0.0111 89.72);
+  --popover: oklch(0.2274 0.0138 87.56);
+  --popover-foreground: oklch(0.9613 0.0111 89.72);
+  --primary: oklch(0.7686 0.1647 70.08);
+  --primary-foreground: oklch(0.2161 0.0061 56.04);
+  --secondary: oklch(0.2534 0.0172 86.85);
+  --secondary-foreground: oklch(0.9613 0.0111 89.72);
+  --muted: oklch(0.2534 0.0172 86.85);
+  --muted-foreground: oklch(0.7161 0.0091 56.26);
+  --accent: oklch(0.2534 0.0172 86.85);
+  --accent-foreground: oklch(0.9613 0.0111 89.72);
+  --destructive: oklch(0.6500 0.1900 25.00);
+  --border: oklch(0.3032 0.0187 84.52);
+  --input: oklch(0.3032 0.0187 84.52);
+  --ring: oklch(0.7686 0.1647 70.08);
+
+  /* Ramp inverts: rare = bright on dark, so the ladder stays readable. */
+  --tier-splus: oklch(0.9200 0.0120 88.00);
+  --tier-s: oklch(0.8200 0.0130 88.00);
+  --tier-a: oklch(0.7200 0.0140 88.00);
+  --tier-b: oklch(0.6200 0.0150 88.00);
+  --tier-c: oklch(0.5200 0.0160 88.00);
+  --tier-d: oklch(0.4300 0.0170 88.00);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  /* Numbers in data contexts line up. */
+  .tabular {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+  }
+  ::selection {
+    background: var(--primary);
+    color: var(--primary-foreground);
+  }
+}
+
+@layer utilities {
+  /* Hairline that survives fractional device pixels without going blurry. */
+  .rule {
+    border-color: var(--border);
+  }
+  /* One elevation level only. Tinted to the paper hue, never pure black. */
+  .lift {
+    box-shadow:
+      0 1px 0 0 oklch(0.9104 0.0129 86.83 / 0.7),
+      0 6px 20px -8px oklch(0.2161 0.0061 56.04 / 0.14);
+  }
+  .dark .lift {
+    box-shadow:
+      0 1px 0 0 oklch(0.3032 0.0187 84.52 / 0.6),
+      0 6px 20px -8px oklch(0 0 0 / 0.5);
+  }
+}
