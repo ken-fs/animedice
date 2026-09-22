@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Next.js emits RSC payload sidecars as .txt next to each page. Harmless but
+# noisy at the web root, and they should never be crawled.
+out/__next*.txt
+out/**/__next*.txt
