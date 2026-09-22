@@ -59,3 +59,8 @@ src/app/
   guide/                 beginner guide
   about/                 sourcing rules and the list of known gaps
 ```
+
+
+## Git 集成连通性测试
+
+2026-09-22：推一个提交，观察 Cloudflare 是否自动重建。
