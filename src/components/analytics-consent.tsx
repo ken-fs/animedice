@@ -101,10 +101,15 @@ function loadAnalytics() {
   w.__adGaLoaded = true;
 
   w.dataLayer = w.dataLayer || [];
-  // gtag pushes its arguments object rather than an array, which is what the
-  // Google snippet does. Keep the same shape so the library reads it correctly.
-  function gtag(...args: unknown[]) {
-    w.dataLayer!.push(args);
+  // Must push the `arguments` object, exactly like Google's snippet. gtag.js
+  // ignores plain arrays: the previous rest-args version (push(args)) loaded
+  // the library but never sent a single hit (verified 2026-10-01: 0 collect
+  // requests after consent).
+  // _args only types the call sites; the values are read from `arguments`.
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  function gtag(..._args: unknown[]) {
+    // eslint-disable-next-line prefer-rest-params
+    w.dataLayer!.push(arguments);
   }
   gtag("js", new Date());
   gtag("config", GA_ID);
