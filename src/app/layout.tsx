@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import Link from "next/link";
 import "./globals.css";
 import { SiteNav } from "@/components/site-nav";
@@ -8,15 +8,19 @@ import { WebsiteJsonLd } from "@/components/json-ld";
 import { SITE_URL } from "@/lib/site";
 import { AnalyticsConsent } from "@/components/analytics-consent";
 
-const geistSans = Geist({
+// Fonts are self-hosted (src/fonts, OFL): next/font/google downloads them during the build,
+// and a flaky download broke a Cloudflare build on 2026-10-06.
+const geistSans = localFont({
+  src: "../fonts/Geist-Variable.woff2",
   variable: "--font-geist-sans",
-  subsets: ["latin"],
+  weight: "100 900",
   display: "swap",
 });
 
-const geistMono = Geist_Mono({
+const geistMono = localFont({
+  src: "../fonts/GeistMono-Variable.woff2",
   variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: "100 900",
   display: "swap",
 });
 
