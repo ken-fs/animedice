@@ -574,6 +574,36 @@
   ],
   "codes": [
     {
+      "code": "50KCCU",
+      "reward": "5 Lucky Spins, 30 Trait Rerolls, 30 Gems",
+      "sources": 3
+    },
+    {
+      "code": "sorry4delay",
+      "reward": "5 Lucky Spins, 10 Trait Rerolls, 10 Gems",
+      "sources": 3
+    },
+    {
+      "code": "UPDATE7",
+      "reward": "5 Lucky Spins, 10 Trait Rerolls, 10 Gems",
+      "sources": 3
+    },
+    {
+      "code": "JPCALLING",
+      "reward": "Freebies [Limited usage]",
+      "sources": 2
+    },
+    {
+      "code": "400KLIKES",
+      "reward": "5 Lucky Spins, 10 Trait Rerolls, 10 Gems",
+      "sources": 3
+    },
+    {
+      "code": "UPDATE6",
+      "reward": "5 Lucky Spins, 10 Trait Rerolls, 10 Gems",
+      "sources": 3
+    },
+    {
       "code": "UPDATE5",
       "reward": "5 Lucky Spins, 10 Trait Rerolls, 10 Gems",
       "sources": 2

@@ -4,7 +4,7 @@ import { codes, redeemSteps, game } from "@/data/game";
 import { CopyCode } from "@/components/copy-code";
 
 export const metadata: Metadata = {
-  title: `All ${codes.length} working codes`,
+  title: `Anime Dice codes (October 2026) — ${codes.length} working codes`,
   description: `Every working Anime Dice code, each confirmed by at least two independent sources, with the exact reward for each and the steps to redeem them in the Shop tab.`,
   alternates: { canonical: "/codes/" },
 };
@@ -25,8 +25,7 @@ export default function CodesPage() {
           Rerolls and a matching stack of gems.
         </p>
         <p className="mt-3 max-w-[62ch] text-sm text-muted-foreground">
-          No expired codes yet. The game launched in August 2026 and nothing has been
-          retired.
+          The game launched in August 2026 and no code has been officially retired yet.
         </p>
       </header>
 
