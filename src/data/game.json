@@ -6,11 +6,11 @@
     "placeId": 113290951185459,
     "universeId": 10708913337,
     "created": "2026-08-15",
-    "updated": "2026-10-11",
+    "updated": "2026-10-12",
     "maxPlayers": 9,
     "discord": "https://discord.com/invite/robloxanimedice",
     "robloxUrl": "https://www.roblox.com/games/113290951185459/Anime-Dice",
-    "title": "Anime Dice [UPD 7]"
+    "title": "Anime Dice [UPD 8]"
   },
   "units": [
     {
@@ -574,6 +574,18 @@
     }
   ],
   "codes": [
+    {
+      "code": "JpCoooooode",
+      "reward": "5 Lucky Spins, 30 Trait Rerolls, 30 Gems",
+      "sources": 3,
+      "note": "UPD 8 build (Oct 12). Beebom + GachaPocket agree on the reward; TryHardGuides lists it as Freebies."
+    },
+    {
+      "code": "UPDATE8",
+      "reward": "Freebies (reward figures conflict across trackers: 30 vs 50 Gems/Rerolls)",
+      "sources": 3,
+      "note": "UPD 8 build (Oct 12). Listed by all three trackers; Beebom says 5 Spins/30 Rerolls/30 Gems, GachaPocket says 5 Spins/50 Rerolls/50 Gems — no in-game confirmation yet."
+    },
     {
       "code": "50KCCU",
       "reward": "5 Lucky Spins, 30 Trait Rerolls, 30 Gems",
