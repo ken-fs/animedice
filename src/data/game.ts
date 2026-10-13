@@ -48,7 +48,11 @@ export const units = raw.units as Unit[];
 export const grades = raw.grades as Grade[];
 export const traits = raw.traits as Trait[];
 export const dice = raw.dice as Die[];
-export const codes = raw.codes as { code: string; reward: string; sources: number }[];
+type Code = { code: string; reward: string; sources: number; expired?: boolean };
+const allCodes = raw.codes as Code[];
+/** Working codes only. Expired ones stay in game.json (never deleted) with `expired: true`. */
+export const codes = allCodes.filter((c) => !c.expired);
+export const expiredCodes = allCodes.filter((c) => c.expired);
 export const redeemSteps = raw.redeemSteps as string[];
 export const systems = raw.systems;
 export const mutations = raw.mutations;

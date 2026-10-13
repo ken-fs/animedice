@@ -6,7 +6,7 @@
     "placeId": 113290951185459,
     "universeId": 10708913337,
     "created": "2026-08-15",
-    "updated": "2026-10-12",
+    "updated": "2026-10-13",
     "maxPlayers": 9,
     "discord": "https://discord.com/invite/robloxanimedice",
     "robloxUrl": "https://www.roblox.com/games/113290951185459/Anime-Dice",
@@ -604,7 +604,9 @@
     {
       "code": "JPCALLING",
       "reward": "Freebies [Limited usage]",
-      "sources": 2
+      "sources": 2,
+      "expired": true,
+      "note": "Expired 2026-10-14: Beebom, GachaPocket and TryHardGuides all list it under expired (limited-use code)."
     },
     {
       "code": "400KLIKES",

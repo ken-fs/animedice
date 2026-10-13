@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { codes, redeemSteps, game } from "@/data/game";
+import { codes, expiredCodes, redeemSteps, game } from "@/data/game";
 import { CopyCode } from "@/components/copy-code";
 
 export const metadata: Metadata = {
@@ -25,7 +25,9 @@ export default function CodesPage() {
           Rerolls and a matching stack of gems.
         </p>
         <p className="mt-3 max-w-[62ch] text-sm text-muted-foreground">
-          The game launched in August 2026 and no code has been officially retired yet.
+          {expiredCodes.length > 0
+            ? `Expired: ${expiredCodes.map((c) => c.code).join(", ")}. Trackers list these as no longer working, so they're left off the list below.`
+            : "The game launched in August 2026 and no code has been officially retired yet."}
         </p>
       </header>
 
