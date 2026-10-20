@@ -56,6 +56,37 @@ export default async function UnitPage({ params }: PageProps<"/units/[slug]">) {
   const sameTier = units.filter((u) => u.tier === unit.tier && u.slug !== unit.slug);
   const rank = rankedUnits.findIndex((u) => u.slug === unit.slug);
 
+  const faqs: { q: string; a: string }[] = unit.verified
+    ? [
+        {
+          q: `What are the odds of rolling ${unit.name} in Anime Dice?`,
+          a: `${unit.name} rolls at ${unit.oddsText} — ${(unit.chance! * 100).toFixed(4)}% per roll. It sits in tier ${unit.tier}${rank >= 0 ? `, #${rank + 1} of ${rankedUnits.length} by rarity` : ""}.`,
+        },
+        {
+          q: `How much does ${unit.name} earn in Anime Dice?`,
+          a: `${unit.incomeText} per second on a plain copy, before grades. Lucky Spins and Trait Rerolls from codes are the cheapest way to chase it.`,
+        },
+        {
+          q: `Is ${unit.name} worth keeping?`,
+          a: adviceFor(unit)[0],
+        },
+      ]
+    : [
+        {
+          q: `Is ${unit.name} in Anime Dice?`,
+          a: `${unit.name} is in the game's roster and shows up in player inventories, but no source we checked publishes its roll odds or income yet. This page tracks the gap.`,
+        },
+      ];
+  const faqLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+
   return (
     <article className="mx-auto w-full max-w-6xl px-5">
       <nav className="pt-8 text-sm text-muted-foreground" aria-label="Breadcrumb">
@@ -235,6 +266,22 @@ export default async function UnitPage({ params }: PageProps<"/units/[slug]">) {
             All {units.length > 0 ? 14 : 0} codes
           </Link>
         </div>
+      </section>
+
+      <section className="pb-16">
+        <h2 className="text-sm font-medium">Questions</h2>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+        />
+        <dl className="mt-4 space-y-4">
+          {faqs.map((f) => (
+            <div key={f.q.slice(0, 24)}>
+              <dt className="text-[15px] font-medium">{f.q}</dt>
+              <dd className="mt-1 max-w-[62ch] text-sm leading-relaxed text-muted-foreground">{f.a}</dd>
+            </div>
+          ))}
+        </dl>
       </section>
     </article>
   );
