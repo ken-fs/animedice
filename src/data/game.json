@@ -575,6 +575,12 @@
   ],
   "codes": [
     {
+      "code": "Halloween",
+      "reward": "1 Pumpkin Jackpot",
+      "sources": 2,
+      "note": "Halloween event code (added 2026-10-22). Beebom (updated Oct 21) and GachaPocket both list it active with the same reward; TryHardGuides doesn't list it yet."
+    },
+    {
       "code": "JpCoooooode",
       "reward": "5 Lucky Spins, 30 Trait Rerolls, 30 Gems",
       "sources": 3,
