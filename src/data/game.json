@@ -6,7 +6,7 @@
     "placeId": 113290951185459,
     "universeId": 10708913337,
     "created": "2026-08-15",
-    "updated": "2026-10-29",
+    "updated": "2026-10-30",
     "maxPlayers": 9,
     "discord": "https://discord.com/invite/robloxanimedice",
     "robloxUrl": "https://www.roblox.com/games/113290951185459/Anime-Dice",
@@ -574,6 +574,12 @@
     }
   ],
   "codes": [
+    {
+      "code": "100KCCU",
+      "reward": "1 Pumpkin Jackpot, 100 Trait Rerolls, 100 Gems",
+      "sources": 3,
+      "note": "Added 2026-10-31. GachaPocket (Oct 30), Destructoid and Pro Game Guides all list it active with the same reward. Beebom and TryHardGuides don't list it yet."
+    },
     {
       "code": "UPDATE10",
       "reward": "50 Trait Rerolls, 1 Pumpkin Jackpot, plus 50 Gems or 50 Lucky Spins (trackers disagree)",
