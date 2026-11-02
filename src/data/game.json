@@ -575,6 +575,12 @@
   ],
   "codes": [
     {
+      "code": "Update11",
+      "reward": "50 Gems, 50 Trait Rerolls, 3 Lucky Spins",
+      "sources": 2,
+      "note": "Added 2026-11-02. GachaPocket lists it active with this reward; TryHardGuides (Nov 2, 'Upd 11') lists it active but only says Freebies. Beebom doesn't list it yet."
+    },
+    {
       "code": "100KCCU",
       "reward": "1 Pumpkin Jackpot, 100 Trait Rerolls, 100 Gems",
       "sources": 3,
