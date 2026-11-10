@@ -6,7 +6,7 @@
     "placeId": 113290951185459,
     "universeId": 10708913337,
     "created": "2026-08-15",
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "maxPlayers": 9,
     "discord": "https://discord.com/invite/robloxanimedice",
     "robloxUrl": "https://www.roblox.com/games/113290951185459/Anime-Dice",
@@ -574,6 +574,18 @@
     }
   ],
   "codes": [
+    {
+      "code": "AUTUMN",
+      "reward": "Freebies (exact rewards not confirmed)",
+      "sources": 2,
+      "note": "Added 2026-11-10. GachaPocket (added Nov 9) and TryHardGuides (modified Nov 8) both list it active; neither gives the reward. Beebom doesn't list it yet."
+    },
+    {
+      "code": "LEAFTOWER",
+      "reward": "Freebies (exact rewards not confirmed)",
+      "sources": 2,
+      "note": "Added 2026-11-10. GachaPocket (added Nov 9) and TryHardGuides (modified Nov 8) both list it active; neither gives the reward. Beebom doesn't list it yet."
+    },
     {
       "code": "Update11",
       "reward": "50 Gems, 50 Trait Rerolls, 3 Lucky Spins",
