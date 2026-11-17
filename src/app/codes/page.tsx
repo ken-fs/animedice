@@ -3,8 +3,15 @@ import Link from "next/link";
 import { codes, expiredCodes, redeemSteps, game } from "@/data/game";
 import { CopyCode } from "@/components/copy-code";
 
+// Title month = game.codesChecked (src/data/game.json): the day the code list was last checked against the
+// sources. Re-checking = bumping that date; never type the month by hand (2026-11-17 the title still said
+// "October 2026" after the list was re-checked in November).
+const checked = new Date(`${game.codesChecked}T00:00:00Z`);
+const CHECKED_MONTH = checked.toLocaleDateString("en-US", { month: "long", year: "numeric", timeZone: "UTC" });
+const CHECKED_DAY = checked.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" });
+
 export const metadata: Metadata = {
-  title: `Anime Dice codes (October 2026) — ${codes.length} working codes`,
+  title: `Anime Dice codes (${CHECKED_MONTH}) — ${codes.length} working codes`,
   description: `Every working Anime Dice code, each confirmed by at least two independent sources, with the exact reward for each and the steps to redeem them in the Shop tab.`,
   alternates: { canonical: "/codes/" },
 };
@@ -19,6 +26,7 @@ export default function CodesPage() {
         <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
           Anime Dice codes
         </h1>
+        <p className="mt-2 text-sm text-muted-foreground">Last checked {CHECKED_DAY}</p>
         <p className="mt-3 max-w-[62ch] text-muted-foreground">
           {codes.length} codes, every one of them confirmed by at least two independent
           sources. Together they are worth {totalSpins} Lucky Spins, {totalRerolls} Trait
