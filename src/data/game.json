@@ -6,7 +6,7 @@
     "placeId": 113290951185459,
     "universeId": 10708913337,
     "created": "2026-08-15",
-    "updated": "2026-11-15",
+    "updated": "2026-11-17",
     "maxPlayers": 9,
     "discord": "https://discord.com/invite/robloxanimedice",
     "robloxUrl": "https://www.roblox.com/games/113290951185459/Anime-Dice",
@@ -574,6 +574,18 @@
     }
   ],
   "codes": [
+    {
+      "code": "BIOMES",
+      "reward": "Freebies (exact rewards not confirmed)",
+      "sources": 2,
+      "note": "Added 2026-11-17. GachaPocket (added Nov 16) and TryHardGuides (modified Nov 15) both list it active; neither gives the reward. Beebom doesn't list it yet."
+    },
+    {
+      "code": "UPDATE12",
+      "reward": "Freebies (exact rewards not confirmed)",
+      "sources": 2,
+      "note": "Added 2026-11-17. GachaPocket (added Nov 16) lists UPDATE12; TryHardGuides lists it as 'UPDATE12!' (likely formatting). Neither gives the reward. Beebom doesn't list it yet."
+    },
     {
       "code": "AUTUMN",
       "reward": "Freebies (exact rewards not confirmed)",
